@@ -5,7 +5,7 @@ box-sizing: border-box;
 font-family: "Roboto", sans-serif;
 }
 html, body{
-height: 100%;
+height:200%;
 width: 100%;
 }
 nav{
@@ -13,10 +13,15 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 12%;
+    height: 10%;
     background-color: black;
-    width: 70%;
+    width: 80%;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
 }
+
 
 nav > .left > .logo{
     width: 50px;
@@ -91,7 +96,7 @@ nav > .right > .store{
 nav > .right > i{
     color: #808080;
     font-weight: 600;
-    font-size: larger;
+    font-size: large;
     padding: 25px;
     border-left: 1px solid #808080;
     transition: 0.25s;
@@ -103,3 +108,144 @@ nav > .right > i{
 .right > i:hover{
     color: white;
 }
+
+.menu {
+    display: none;
+    font-size: 24px;
+    color: white;
+}
+
+
+.banner{
+background-image: url(https://supercell.com/_next/static/media/frontpage_hero.bca9ba5a.webp);
+background-repeat: no-repeat;
+background-position: center;
+background-position-y: bottom;
+background-size: cover;
+width: 100%;
+height: 80vh;
+text-align: center;
+
+}
+
+
+.banner > h1{
+  padding-top: 120px;
+  font-size: 40px;
+}
+
+.banner > p{
+    padding-top: 20px;
+    margin: 0 500px;
+    
+    
+}
+
+.banner > .banner-btn{
+    
+    margin-top: 180px;
+    background-color: #2D85F3;
+    color: white;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 30px;
+}
+
+.banner-btn:hover{
+    background-color: #0871f1;
+    cursor: pointer;
+    
+}
+
+.container1{
+    width: 84.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* background-color: aquamarine; */
+}
+
+.container1 > .box1 > img {
+    padding-top: 20px;
+    
+    width: 90%;
+    
+}
+
+.container1 > .box1,.container1 > .box2{
+    text-align: center;
+    
+}
+
+.container1 > .box1 > h4, .container1 > .box2 > h4{
+     padding: 10px; 
+        color: rgb(223, 46, 211);
+}
+
+.container1 > .box1 > p, .container1 > .box2 > p{
+    font-weight:500; 
+    padding: 10px;
+    margin: 0 20px;
+    font-size: 19px;       
+}
+
+.con4 > .box2 {
+    visibility: hidden;
+}
+
+.container1 > .box2 > img {
+    width: 90%; 
+}
+
+
+
+
+
+/* @media (min-width: 600px) and (max-width: 1024px) {
+    .left > img {
+        height: 7vh;
+    }
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .right > i {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    nav {
+        width: 100%;
+    }
+
+    .left > img {
+        height: 7vh;
+    }
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .right > i {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+} */
+
