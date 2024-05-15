@@ -1,0 +1,105 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Roboto", sans-serif;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12%;
+    background-color: black;
+    width: 70%;
+}
+
+nav > .left > .logo{
+    width: 50px;
+}
+
+nav > .left {
+    padding: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+nav > .left > a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: #808080;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.left > a:hover{
+    color: white;
+}
+
+nav > .right {
+    padding: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+nav > .right > .btn{
+    background-color: #808080;
+   margin-top: 20px;
+   font-size: medium;
+   font-weight: 600;
+   color: black;
+    border: none;
+    width: 45px; 
+    height: 35px;   
+    border-bottom-left-radius: 15px ;
+    border-top-right-radius: 15px ;
+    transition: 0.25s;
+}
+
+nav > .right > .btn1{
+    background-color: #808080;
+   margin-top: 20px;
+   font-size: medium;
+   font-weight: 600;
+   color: black;
+    border: none;
+    width: 45px; 
+    height: 35px;   
+   border-radius: 7px;
+   transition: 0.25s;
+}
+
+nav > .right > .store{
+    background-color: #808080;
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+     border: none;
+     width: 75px; 
+     height: 35px;   
+     border-bottom-left-radius: 15px ;
+     border-top-right-radius: 15px ;
+     transition: 0.25s;
+}
+
+
+nav > .right > i{
+    color: #808080;
+    font-weight: 600;
+    font-size: larger;
+    padding: 25px;
+    border-left: 1px solid #808080;
+    transition: 0.25s;
+}
+
+.right > button:hover{
+    background-color: white;
+}
+.right > i:hover{
+    color: white;
+}
