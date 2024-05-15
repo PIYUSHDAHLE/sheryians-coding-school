@@ -199,7 +199,63 @@ text-align: center;
     width: 90%; 
 }
 
+.btn-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.btn-c {
+    background-color: #0871f1;
+    margin: 50px 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.container-box1{
+    background-image: url(https://supercell.com/_next/static/media/bg_wmg_brawlstars.0fd2a716.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.container-box1 > .b1{
+ width: 50%;    
+}
+.container-box1 > .b1 > h1 {
+ padding: 10px;
+ margin: 0  80px;
+ font-size: 40px;
+ color: white;
+}
+.container-box1 > .b1 > h3 {  
+    padding: 10px;
+    margin: 0 80px;
+    color: white;
+    line-height: 25px;
+}
+.container-box1 > .b1 > button {  
+    background-color: white; 
+    margin:30px 90px;
+    color: black;
+    padding: 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+
+}
+
+.container-box1 > .b2 > img{
+    height: 550px;
+}
 
 
 
