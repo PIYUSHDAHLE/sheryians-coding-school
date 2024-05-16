@@ -7,7 +7,8 @@ font-family: "Roboto", sans-serif;
 html, body{
     width: 100%;
     height: 100%;
-/* overflow: hidden; */
+    background-color: #F2F2F2;
+
 }
 nav{
     margin: auto;
@@ -307,31 +308,114 @@ text-align: center;
     gap: 40px;
     padding: 20px;
     margin: auto;
-    
 }
 
-.article > .box1{
+.article > .box1, .article > .box2{
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
-    background-color: #808080;
+    height: 90%;
+    box-shadow: 1px 1px 5px #88888886 ;
     
 }
-.article > .box2{
-    flex-direction: column;
-    display: flex;
-    width: 50%;
-    height: 100%;
+
+.article > .box1 > h3, .article > .box2 >h3{
+   padding: 15px;
 
 }
-.article > .box1 >img{
-   object-fit: cover;
-   width: 100%;
+.article > .box1 > p, .article > .box2 >p{
+    padding: 15px;
+    
 }
-.article > .box2 >img{
+.article > .box1 >a, .article > .box2 >a{
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #2D85F3;
+}
+
+
+.article > .box1 >img, .article > .box2 >img{
     object-fit: cover;
     width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 65%;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 0px 250px;
+  
+}
+
+.f1{
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.512);
+}
+
+
+.f1 > .left {
+    /* background-color: #0871f1; */
+    width: 50%;
+}
+.f1 > .right{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    width: 50%;
+    /* background-color: #0871f1; */
+}
+.f1 >.left > .icon{
+    font-size: 40px;
+}
+.f1 >.left > i >img{
+    height: 30px;
+}
+
+.f1 > .right > img{
+    width: 150px;
+}
+
+.service{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service > ul {
+    list-style: none;
+display: flex;
+font-size: small;
+gap: 25px;
+}
+
+.last{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 60%;
+    /* align-items: center; */
+}
+
+
+.last > .left> ul{
+    list-style: none;
+    color: #808080;
+}
+.last> .right >img {
+    padding-top: 20px;
+    margin-left: 110px;
+    width: 50px;
 }
 
 
