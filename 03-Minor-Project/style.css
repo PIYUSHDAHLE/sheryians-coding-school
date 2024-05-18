@@ -60,16 +60,17 @@ nav > ul {
   background-position-y: top;
 }
 
-.box {
+.box > .x {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
-  /* margin: auto; */
+}
+.box2 {
+  display: flex;
+  justify-content: center;
 }
 
-.box > .img {
-  width: 80%;
-  height: 45vh;
+.box > .x > .img {
+  width: 50%;
   margin: 20px;
   background-image: url(https://assets.ajio.com/medias/sys_master/root/20211014/gnYm/616825c2aeb269011092a165/-473Wx593H-460933904-white-MODEL.jpg);
   background-position: center;
@@ -78,37 +79,33 @@ nav > ul {
   background-position-y: top;
 }
 
-.box > .content {
+.box > .x > .content {
   margin: 20px;
 }
 
-.box > .content > h4 {
+.box > .x > .content > h5 {
   margin: 10px 0;
   color: gray;
 }
 
-.box > .content > p {
+.box > .x > .content > p {
   margin: 10px 0;
 }
 
-.box > .content > .size {
+.box > .x > .content > .size {
   margin: 10px 0;
   display: flex;
     gap: 5px;
 }
 
-.box > .content > .size > h3{
-    margin: 5px 0;
-    
-}
 
-
-.box > .content > .size > .s,
+.box > .x > .content > .size > .s,
 .m,
 .l,
 .xl {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    font-size: 10px;
+    height: 20px;
     background-color: black;
     color: white;
     display: flex;
@@ -117,9 +114,33 @@ nav > ul {
 }
 
 .btn > button {
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 5px;
     background-color: rgb(35, 35, 35);
     color: white;
 }
+
+.collect{
+  text-align: center;
+}
+.collection{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 30px;
+}
+
+.c1 > img {
+  margin: 10px;
+  width: 130px;
+  height: 150px;
+  object-position: top;
+  object-fit: cover;
+}
+
+.y{
+  display: flex;
+align-items: center; gap: 15px;
+  justify-content: center;
+} 
