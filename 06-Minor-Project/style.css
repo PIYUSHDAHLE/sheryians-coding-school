@@ -76,4 +76,50 @@ button:hover{
     background-color: #b921ff6d;
 }
 
+@media screen and (max-width:400px)
+{
+   
 
+    .container{
+      
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+          
+    .right > input{
+        width: 150%;
+    }
+
+    .btn {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+}
+@media (min-width:401px) and (max-width:1080px)
+{
+  
+
+    .container{
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right > input{
+        width: 80%;
+    }
+
+    .btn {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
