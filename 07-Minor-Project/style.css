@@ -1,0 +1,117 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.container{
+    width: 70%;
+    height: 50%;
+    background: rgb(54,104,238);
+background: linear-gradient(90deg, rgba(54,104,238,1) 0%, rgba(57,243,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.left > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.right{
+  color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.right > input{
+    width: 70%;
+    padding: 5px ;
+
+}
+
+.right input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.right > h1{
+    padding-top: 15px;
+    align-items: center;
+margin: 10px;
+
+}
+
+.right > h3{
+    margin-top: 15px;
+}
+
+.common{
+    display: flex;
+    margin-top: 15px;
+    gap: 50px;
+}
+
+.common .cvv{
+    width: 40%;
+    padding: 5px ;
+    
+}
+
+.common .date{
+    width: 100%;
+    padding: 4px ;
+
+}
+
+.btn{
+ margin-top: 25px;
+}
+
+button{
+        width: 70%;
+        padding: 5px ;
+        border-radius: 5px;
+        border: none;
+        font-size: medium;
+        font-weight: 500;
+}
+button:hover{
+        background-color: yellow;
+        
+}
+
+@media screen and (width:390px)
+{
+   
+}
