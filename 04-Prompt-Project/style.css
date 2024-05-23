@@ -1,0 +1,138 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #000807;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 300px;
+    height:70%;
+    background-color: #000807;
+    display: flex;
+    box-shadow: 1px 1px 5px #0f7065;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > .hbox{
+    background-color: #000807;
+    height: 20vh;
+}
+
+.container > .hbox > input{
+    margin-top: 90px;
+   background-color: #000807;
+    width: 100%;
+    height: 50px;
+    color: white;
+    border: none;
+      padding-left: 10px;
+    font-size:xx-large;
+    outline: none;
+
+}
+
+.container > .bigbox{
+    width: 100%;
+    height: 100%;
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigbox >.box{
+    padding: 0px 10px;
+    background-color: #0d0d0d;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bigbox >.box >.btn{
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size:medium;
+      width: 40px;
+      background-color: #0f7065;
+      height: 40px;
+}
+
+.bigbox >.box > .btn:focus{
+    background-color: rgba(240, 248, 255, 0.181);
+}
+.bigbox >.box > .btn2:focus{
+    background-color: rgba(240, 248, 255, 0.181);
+}
+.bigbox >.box >.btn2{
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size:medium;
+      width: 40px;
+      background-color: #70680f;
+      height: 40px;
+}
+
+@media screen and (max-width: 390px) {
+   
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container > .hbox {
+        height: 70vh;
+    }
+    
+    .container > .hbox > input {
+        margin-top: 297px;}
+}
+
+
+@media (min-width: 390px) and (max-width: 1080px) {
+   
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container > .hbox {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .bigbox >.box{
+        margin: 10px;
+    }
+    
+    .container > .hbox > input {
+        margin-top: 240px;}
+
+
+        .bigbox >.box >.btn{
+              width: 50px;   
+              height: 50px;
+        }
+        .bigbox >.box >.btn2{ 
+              width: 50px;     
+              height: 50px;
+        }
+}
+
+
+
+
