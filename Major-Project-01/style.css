@@ -9,16 +9,21 @@ width: 100%;
 }
 
 nav{
-    background-color:white;
+    background-color: white;
     color: rgb(0, 0, 0);
     width: 100%;
     height: 10vh;
     display: flex;
+    position: sticky;
+    top: 0px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     font-family: "Poppins", sans-serif;
+
 }
+
+
 nav > .logo{
     width: 150px;
   
@@ -67,8 +72,195 @@ nav > .right > i{
 }
 
 
+main > .page1{
+    background-image: url(https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+     background-position:bottom;
+     background-repeat: no-repeat;
+     background-size:cover;
+     width: 100%;
+     height: 100vh;
+}
+
+.page1 > .box{
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.page1 > .box > .circle{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    width: 600px;
+    height: 600px;
+    background-color: #d39221df ;
+    border-radius: 100%;
+}
+
+.page1 > .box > .circle > h2{
+    font-family: "Indie Flower", cursive;
+}
+
+.page1 > .box > .circle > .text1{
+    margin-top: 10px;
+   font-size: 40px;
+   font-family: "Dancing Script", cursive;
+   
+}
+.page1 > .box > .circle > .text2{
+    font-family: "Fjalla One", sans-serif;
+    margin-top: 10px;
+   font-size: 70px;
+}
+
+.page1 > .box > .circle >.btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1 > .box > .circle > .btn > button{
+    background-color: black;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px ;
+    color: white;
+    border: none;
+}
 
 
+
+.page2{
+    display: flex;
+    /* justify-content: center; */
+    /* margin-top: 20px; */
+    flex-direction: column;
+     background-color: white;
+     width: 100%;
+     height: 130vh;
+}
+
+.page2 > h1{
+    font-family: "Fjalla One", sans-serif;
+    font-size: 200px;
+    text-align: center;
+    color: rgba(133, 133, 133, 0.766);
+}
+
+.page2 > .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.page2 > .box > .left{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.page2 > .box > .left > img{
+    width: 450px;
+}
+
+.page2 > .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.page2 > .services > .sbox{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page2 > .services > .sbox > .b1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 100%;
+    display: flex;
+    color: white;
+    align-items:center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.page2 > .services > .sbox  > .z1 >h1{
+    font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+   
+}
+
+.page2 > .services > .sbox  > .z1 >h3{
+ color: grey;
+ font-family: "Fjalla One", sans-serif;
+ font-size: small;
+}
+
+
+
+
+
+
+
+.page2 > .box > .right{
+    margin-top: 50px;
+    color: black;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.page2 > .box > .right > h2{
+    text-transform: uppercase;
+   font-size: xx-large;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.page2 > .box > .right > p{
+    color: gray;
+    padding: 25px 55px;
+}
+
+.page2 > .box > .right > .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.page2 > .box > .right > .last >button{
+   
+    background-color: black;
+    padding: 15px;
+    color: white;
+    border: none;
+}
+
+.page3{
+     background-color: rgb(118, 109, 109);
+     width: 100%;
+     height: 90vh;
+}
 
 
 
