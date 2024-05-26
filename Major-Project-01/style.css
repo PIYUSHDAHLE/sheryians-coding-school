@@ -218,12 +218,6 @@ main > .page1{
  font-size: small;
 }
 
-
-
-
-
-
-
 .page2 > .box > .right{
     margin-top: 50px;
     color: black;
@@ -290,7 +284,6 @@ main > .page1{
 
 .page3 > .box > .left{
     width: 500px;
-    height: 500px;
 }
 
 .page3 > .box > .center{
@@ -364,6 +357,7 @@ main > .page1{
     font-size: x-large;
     padding: 0 10px;
     padding-bottom: 50px;
+    font-family: "Indie Flower", cursive;
 }
 
 .page4 > .box{
@@ -385,15 +379,15 @@ main > .page1{
 .page4 > .box > .b1 >img:hover{
     transform: scale(0.95);
     background-color: #eec59d;
-    /* box-shadow: 1px 1px 5px black; */
+
 }
 
-.page4 > .box > .b1> h2{
+.page4 > .box > .b1 > h2{
+    font-family: "Indie Flower", cursive;
     line-height:50px;
     font-size: small;
     text-align: center;
     color: rgb(53, 50, 50);
-    font-family: "Fjalla One", sans-serif;   
 }
 
 footer{
@@ -458,16 +452,189 @@ color: #9b7e61;
 
    nav > .right > i{
     display: initial !important;
-}
+
 }
 
-@media (min-width:390px) and (max-width:1080px){
+.page1 > .box > .circle {
+    font-size: 9px;
+    width: 380px;
+    height: 380px;
+   margin-top: 185px;
+}
+
+.page2 > h1 {
+    font-size: 55px;
+    padding-top: 30px;
+}
+
+.page1 > .box > .circle > .text2 {
+    padding-top: 0px;
+    font-size: 52px;
+}
+
+.page1 > .box > .circle > .btn > button {
+    width: 222px;
+}
+
+.page2{
+    height: 160vh;
+}
+
+.page2 > .box{
+    flex-direction: column;
+}
+
+.page2 > .box > .right {
+  
+    margin: 20px;
+    width: 100%; 
+}
+
+.page2 > .box > .right > h2{
+    font-size: x-large;
+}
+
+.page2 > .box > .right > p {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.page2 > .box > .right > .last{
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.page2 > .services {
+    align-items: start;
+    flex-direction: column;
+    margin-top: 23px;
+    margin-left: 48px;
+    gap: 40px;
+}
+
+.page3{
+    height: 160vh;
+}
+
+.page3 > .box {
+  flex-direction: column;
+}
+
+.page3 > .box > .center {
+    padding: 98px;
+    padding-left: 0px;
+}
+
+.page3 > .box > .right{
+    padding-right: 80px;
+}
+
+.page4{
+    height: 160vh;
+}
+.page4 > .box {
+    flex-direction: column;
+  }
+  
+  footer{
+    height: 80vh;
+}
+ 
+footer > .box {
+    flex-direction: column;
+    padding: 0;
+}
+footer > .box2 {
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 0;
+}
+
+}
+
+@media (min-width:400px) and (max-width:1080px){
+   
     nav > .centre{
         display: none;
        }    
       
        nav > .right > i{
         display: initial !important;
-    }    
+    }   
+    
+    .page1 > .box > .circle {
+        margin-top: 150px;
+    }
+    
+    .page2{
+        height: 92vh;
+    }
+
+
+
+    .page2 > h1{
+        font-size: 115px;
+        padding-top: 39px;
+    }
+        
+
+    .page2 > .box > .right > h2{
+        font-size: 20px;
+    }
+
+    .page2 > .box > .right > p{
+        padding: 25px 15px;
+    }
+
+    .page2 > .box > .right > .last {
+        padding-top: 20px;
+        gap: 20px;
+    }
+    
+    .page2 > .services{
+        gap: 0;
+        padding-left: 30px;
+    }
+
+
+
+    .page3{
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         
+    }
+
+    .page3 > .box > .left{
+        padding-top: 50px;
+        padding-left: 120px;
+    }
+    .page3 > .box > .right{
+    
+        padding-right: 80px;
+    }
      
+    .page3 > .box{
+        flex-wrap: wrap;
+    }
+     
+    .page4{
+        height: 50vh;
+    }
+
+    .page4 > .box > .b1 >img {
+        width: 200px;
+        height: 200px;}
+ 
+        footer > .box {
+            padding: 0;
+            padding-top: 50px;
+        }
+
+        footer > .box2 {
+        padding: 0;
+        padding-top: 100px;
+        justify-content: space-evenly;
+    }    
 }
