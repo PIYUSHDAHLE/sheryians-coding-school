@@ -4,11 +4,11 @@
 }
 
 *{
-background-color: var(--bgcolor);
-color: var(--text);
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    background-color: var(--bgcolor);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -30,6 +30,10 @@ padding-top: 20px;
    list-style-type: none;
    font-size: 18px;
    font-family: "Poppins", sans-serif;
+}
+aside > ul > li:hover{
+    color: #b4b4b4;
+    cursor: pointer;
 }
 
 aside > ul> li:first-child{
@@ -65,6 +69,11 @@ section > .profile > .left > .circle > img {
     padding:7px 20px;
     border: none;
     border-radius: 5px;
+}
+.line1 > button:hover{
+    background-color: rgba(188, 184, 184, 0.318);
+    cursor: pointer;
+   
 }
 
 .ri-arrow-down-s-line{
@@ -119,6 +128,8 @@ section > .profile > .left > .circle > img {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 5px;
 }
 .post > .post1 {
     display: flex;
