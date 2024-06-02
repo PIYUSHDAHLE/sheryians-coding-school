@@ -1,10 +1,134 @@
+:root{
+    --bgcolor: #000000;
+    --text:#F5F5F5;
+}
+
 *{
+background-color: var(--bgcolor);
+color: var(--text);
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
 html, body{
 height: 100%;
 width: 100%;
 }
 
+aside{
+    position: fixed;
+    top: -20px;
+    text-align: left;
+    padding: 20px;
+}
+aside > ul > li{
+    height: 10vh;
+    border-right:1px solid grey;
+    width: 150%;
+padding-top: 20px;
+   list-style-type: none;
+   font-size: 18px;
+   font-family: "Poppins", sans-serif;
+}
+
+aside > ul> li:first-child{
+    font-size:20px ;
+    font-family: "Oleo Script", system-ui;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+section > .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+}
+
+
+section > .profile > .left > .circle > img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.line1 > button{
+    background-color: grey;
+    padding:7px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.ri-arrow-down-s-line{
+    background-color: gray;
+}
+
+.right > .line1 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.right > .line2{
+    display: flex;
+    gap: 27px;
+    padding: 25px 0px;
+}
+
+.right > h5{
+    padding: 20px 0px;
+}
+
+.highlights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    padding-left: 200px;
+    border-bottom: 1px solid grey;
+}
+
+.highlights > img {
+    width: 100px;
+    border: 3px solid grey;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.opts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 25px 0px;
+    font-size: large;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.post > .post1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.post > .post1 > img{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
