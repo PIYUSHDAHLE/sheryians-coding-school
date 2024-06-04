@@ -1,0 +1,116 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+html, body{
+height: 100%;
+width: 100%;
+}
+
+body{
+    background: linear-gradient(90deg, #00C9FF 0%, #9297fe 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #fefefe72;
+    padding: 100px 50px;
+    border-radius: 10px;
+}
+
+.box > .b1{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 10px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.b1> div > i{
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 50%;
+    background-color: #5df86c;
+   font-size: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.b1 > h1{
+    font-size: 20px;
+    color: #5df86c;
+}
+
+.box > .b2{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 10px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.b2> div > i{
+    width: 200px;
+    height: 200px;
+    color: white;
+    border-radius: 50%;
+    background-color: tomato;
+   font-size: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.b2 > h1{
+    font-size: 20px;
+    color: tomato;
+}
+
+.b1 > p, .b2 > p{
+    color: gray;
+}
+
+.b1 > button{
+    padding: 8px 70px;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #5df86c;
+}
+.b2 > button{
+    padding: 8px 70px;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: tomato;
+}
+
+.b1 > button:hover, .b2 > button:hover{
+    background-color: rgb(184, 109, 255);
+}
+
