@@ -1,7 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+
 color: white;
 }
 
@@ -75,6 +81,75 @@ nav > .right >.box > img{
     display: none;
     font-size: 25px;
 }
+
+main > img{
+    width: 100%;
+}
+
+.header1{
+    width: 100%;
+    height: 7vh;
+    margin-top: -9px;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+ 
+}
+
+.news > .pic1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news > .pic1 >img{
+    padding: 10px 0px;
+    width: 100%;
+    height: 30vh;
+    transition: 1s;
+}
+
+.news > .pic1 >img:hover{
+    transform: scale(0.95);
+}
+
+.news > .pic1 > p{
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:600px) {
     nav >  .logo{
         width: 150px;
@@ -114,8 +189,8 @@ nav > .right >.box > img{
         display: none;
     }
 
-
     .ri-menu-line{
         display:initial;
     }
+
 }
