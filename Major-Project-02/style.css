@@ -127,8 +127,35 @@ main > img{
     padding-bottom: 10px;
 }
 
+.header2{
+    width: 100%;
+    height: 7vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.bick{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+}
 
+.bick > .b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 5px;
+    gap: 10px;
+}
+.bick > .b1 > img{
+    width: 740px; 
+}
 
 
 
