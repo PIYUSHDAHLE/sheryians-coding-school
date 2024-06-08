@@ -234,7 +234,6 @@ flex-direction: column;
 }
 
 .Support > .box1 {
-    /* overflow: hidden; */
     width: 100%;
     height: 40vh;
     display: flex;
@@ -436,13 +435,277 @@ flex-direction: column;
    border: 1px solid transparent;
 }
 
+.Locate{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    }
+    
+    .Locate > .box1 {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        
+    }
+    
+    .Locate > .box1 > .over{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .Locate > .box1 >.over >.b1{
+        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/home/locate-us/dealers-landing.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    
+    .Locate > .box1 >.over >.b1> .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 10px;
+           width: 100%;
+           height: 15vh;
+           background-color: #000000da;
+          margin-top: 200px;
+    }
+
+    .Locate > .box1 >.over >.b1> .content>h2{
+        font-size: 20px;
+    }
+    
+    .Locate > .box1 >.over >.b1> .content > button{
+        margin-top: 7px;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid white;}
+    
+        .Locate > .box1 >.over >.b1> .content > button:hover{
+        background-color: rgb(212, 44, 44);
+       border: 1px solid transparent;
+    }
+
+    /* ............................................ */
+
+    .Locate > .box1 >.over >.b2{
+        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/service-centre.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    
+    .Locate > .box1 >.over >.b2> .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 10px;
+           width: 100%;
+           height: 15vh;
+           background-color: #000000da;
+          margin-top: 200px;
+    }
+
+    .Locate > .box1 >.over >.b2> .content>h2{
+        font-size: 20px;
+    }
+    
+    .Locate > .box1 >.over >.b2> .content > button{
+        margin-top: 7px;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid white;}
+    
+        .Locate > .box1 >.over >.b2> .content > button:hover{
+        background-color: rgb(212, 44, 44);
+       border: 1px solid transparent;
+    }
+    /* ............................................ */
+
+    .Locate > .box1 >.over >.b3{
+        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/genuine-parts.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    
+    .Locate > .box1 >.over >.b3> .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 10px;
+           width: 100%;
+           height: 15vh;
+           background-color: #000000da;
+          margin-top: 200px;
+    }
+
+    .Locate > .box1 >.over >.b3> .content>h2{
+        font-size: 20px;
+    }
+    
+    .Locate > .box1 >.over >.b3> .content > button{
+        margin-top: 7px;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid white;}
+    
+        .Locate > .box1 >.over >.b3> .content > button:hover{
+        background-color: rgb(212, 44, 44);
+       border: 1px solid transparent;
+    }
 
 
+    /* box 2 */
+    .Locate > .box2 {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        
+    }
+    
+    .Locate > .box2 > .over{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .Locate > .box2 >.over >.b1{
+        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/reown.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    
+    .Locate > .box2 >.over >.b1> .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 10px;
+           width: 100%;
+           height: 15vh;
+           background-color: #000000da;
+          margin-top: 200px;
+    }
 
+    .Locate > .box2 >.over >.b1> .content>h2{
+        font-size: 20px;
+    }
+    
+    .Locate > .box2 >.over >.b1> .content > button{
+        margin-top: 7px;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid white;}
+    
+        .Locate > .box2 >.over >.b1> .content > button:hover{
+        background-color: rgb(212, 44, 44);
+       border: 1px solid transparent;
+    }
 
+    /* ............................................ */
 
+    .Locate > .box2 >.over >.b2{
+        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/GGC-locate-us.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    
+    .Locate > .box2 >.over >.b2> .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 10px;
+           width: 100%;
+           height: 15vh;
+           background-color: #000000da;
+          margin-top: 200px;
+    }
 
+    .Locate > .box2 >.over >.b2> .content>h2{
+        font-size: 20px;
+    }
+    
+    .Locate > .box2 >.over >.b2> .content > button{
+        margin-top: 7px;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid white;}
+    
+        .Locate > .box2 >.over >.b2> .content > button:hover{
+        background-color: rgb(212, 44, 44);
+       border: 1px solid transparent;
+    }
+    /* ............................................ */
 
+    .Locate > .box2 >.over >.b3{
+        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/leh-service.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    
+    .Locate > .box2 >.over >.b3> .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 10px;
+           width: 100%;
+           height: 15vh;
+           background-color: #000000da;
+          margin-top: 200px;
+    }
+
+    .Locate > .box2 >.over >.b3> .content>h2{
+        font-size: 20px;
+    }
+    
+    .Locate > .box2 >.over >.b3> .content > button{
+        margin-top: 7px;
+        background-color: transparent;
+        padding: 10px;
+        border: 1px solid white;}
+    
+        .Locate > .box2 >.over >.b3> .content > button:hover{
+        background-color: rgb(212, 44, 44);
+       border: 1px solid transparent;
+    }
 
 
 
