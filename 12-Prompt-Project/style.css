@@ -1,0 +1,260 @@
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body{
+height: 100%;
+width: 100%;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(161, 197, 177);
+}
+
+.container > .box{
+    width: 90%;
+    height: 90vh;
+    background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-padrinan-255379.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .container > .box > .c1{
+        background-color: rgba(71, 177, 61, 0.733);
+        width: 10%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+}
+
+.box > .c1 >.up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: xx-large;
+    padding-top: 20px;
+    gap: 20px;
+}
+.box > .c1 >.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: xx-large;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.box > .c1 >.up >i, 
+.box > .c1 >.bottom>i{
+   background-color: rgba(57, 102, 44, 0.767);
+   color: white;
+   border-radius: 50%;
+   padding: 10px;
+}
+.box > .c1 >.up >i:hover, 
+.box > .c1 >.bottom>i:hover{
+   background-color:rgba(128, 197, 24, 0.808);
+}
+
+.container >.box > .c2{
+    background-color: rgb(218, 245, 224);
+    width: 40%;
+    height: 90vh;
+}
+
+.box > .c2 > .line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    }
+    
+    .box > .c2 > .line > i{
+        font-size: 25px;
+        }    
+        .box > .c2 > input{
+          margin: 0px 20px;
+          padding: 10px 7px;
+          width: 93%;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          margin-bottom: 10px;
+}
+
+.box > .c2 > .chats{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ gap: 5px;
+
+}
+.box > .c2 > .chats > .m1{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 100px;
+ width: 93%;
+ padding: 5px 10px;
+}
+
+.chats >.bg-color{
+    background-color: rgba(0, 128, 0, 0.356);
+    padding: 5px 10px;
+}
+
+.box > .c2 > .chats > .m1>.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box > .c2 > .chats > .m1>.left >img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.box > .c2 > .chats > .m1>.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.m1>.right >.pop{
+   background-color: rgb(52, 52, 223);
+   color: white;
+   padding: 0px 5px;
+   border-radius: 50%;
+}
+
+.container >.box > .c3{
+    background-color: rgba(151, 142, 142, 0.541);
+    width: 60%;
+    height: 90vh;
+    }
+    
+    .container >.box > .c3 > .header{
+        height: 10vh;
+        width: 100%;
+        background-color: rgba(60, 99, 57, 0.671);    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+}
+
+.c3 >.header > .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: white;
+
+}
+
+.c3 >.header > .right{
+    font-size: x-large;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.c3 >.header >.left >img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+.chat-box{
+    width: 100%;
+    height: fit-content;
+    min-height: 72vh;
+    padding: 10px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+}
+
+.chat-box > .line1{
+    background-color: #DAF5E0;  
+    padding: 5px 20px;
+    border-radius: 20px;
+   margin-right: auto;
+}
+.chat-box > .line2{
+    background-color: rgb(195, 248, 164);
+    display: flex;
+    padding: 5px 20px;
+    margin-left: auto;
+    border-radius: 20px;
+}
+.last-box{
+    width: 100%;
+    height: 8vh;
+    background-color: #5B7A60;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.last-box > .type-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+border-radius: 10px;
+}
+.last-box > .type-box >i{
+
+    padding: 6px 5px;
+    border: none;
+    font-size: 20px;
+}
+.last-box > .type-box >input{
+   padding: 7px;
+   outline: none;
+   border: none;
+   width: 630px;
+}
+.last-box > .ri-mic-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+}
