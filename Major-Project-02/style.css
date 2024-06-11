@@ -707,10 +707,86 @@ flex-direction: column;
        border: 1px solid transparent;
     }
 
+  footer{
+    width: 100%;
+    color: white        ;
+    }
+    
+    footer > .box{
+        height: 32vh;
+        background-color: #140f0f;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       
+  }
+  footer > .box >.b1{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       gap: 10px;
+  }
+  footer > .box >.b1 > img{
+   width: 100px;
+ }
+  footer > .box >.b1 > a{
+      font-size: x-large;
+      text-decoration: none;
+      
+ }
+
+ footer > .box1{
+    height: 20vh;
+    background-color: #5d5b5b;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+footer > .box1 >ul{
+list-style: none;
+display: flex;
+gap: 50px;
+}
+
+footer > .box1 >ul>li:hover{
+    cursor: pointer;
+    color: #ee675d;
+}
+
+footer > .box2{
+    height: 15vh;
+    background-color: #a9a7a7;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+footer > .box2 >.logo{
+width: 300px;
+}
+
+footer > .box2 >.icon >i{
+font-size: 30px;
+color: #DA291C;
+}
+footer > .box2 >.icon >i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+footer > .box3{
+    height: 10vh;
+    background-color: #a9a7a7;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
 
 
-
-@media screen and (max-width:600px) {
+    @media screen and (max-width:600px) {
     nav >  .logo{
         width: 150px;
     }
@@ -721,7 +797,7 @@ flex-direction: column;
     nav > .right >.box{
         display: none;
     }
-    
+
     .ri-search-line{   
         display: none;
     }
