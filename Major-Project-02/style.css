@@ -1,832 +1,1017 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Poppins", sans-serif;
-
-color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
-html, body{
-height: 100%;
-width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-nav{
-    width: 100%;
-    height: 10vh;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    position: sticky;
-    top: 0;
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: sticky;
+  top: 0;
 }
 
-nav >  .logo{
-    width: 200px;
+nav > .logo {
+  width: 200px;
 }
 
 nav > ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav > ul > li >a{
-    font-size: larger;
-    text-decoration: transparent;
-          
-    line-height: 100px;
-    transition: 0.25s;
+nav > ul > li > a {
+  font-size: larger;
+  text-decoration: transparent;
+
+  line-height: 100px;
+  transition: 0.25s;
 }
 
 nav > ul > li > a:hover {
-     color: #DA291C;
-     cursor: pointer;
-     text-decoration: underline;
+  color: #da291c;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-nav > .right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+nav > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav > .right >.box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
+nav > .right > .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
-nav > .right > button{
-    padding: 5px 10px;
-    background-color:#DA291C;
-    border: none;
-    border-radius: 5px;
+nav > .right > button {
+  padding: 5px 10px;
+  background-color: #da291c;
+  border: none;
+  border-radius: 5px;
 }
 
-nav > .right > button:hover{
-    background-color: white;
-    color: #DA291C;
+nav > .right > button:hover {
+  background-color: white;
+  color: #da291c;
 }
 
-nav > .right >.box > img{
- width: 30px;
+nav > .right > .box > img {
+  width: 30px;
 }
 
-.ri-menu-line{
-    display: none;
-    font-size: 25px;
+.ri-menu-line {
+  display: none;
+  font-size: 25px;
 }
 
-main > img{
-    width: 100%;
+main > img {
+  width: 100%;
 }
 
-.header1{
-    width: 100%;
-    height: 7vh;
-    margin-top: -9px;
-    background-color: #212121;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header1 {
+  width: 100%;
+  height: 7vh;
+  margin-top: -9px;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.news{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: black;
- 
+.news {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
 }
 
-.news > .pic1{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+.news > .pic1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
-.news > .pic1 >img{
-    padding: 10px 0px;
-    width: 100%;
-    height: 30vh;
-    transition: 1s;
+.news > .pic1 > img {
+  padding: 10px 0px;
+  width: 100%;
+  height: 30vh;
+  transition: 1s;
 }
 
-.news > .pic1 >img:hover{
-    transform: scale(0.95);
+.news > .pic1 > img:hover {
+  transform: scale(0.95);
 }
 
-.news > .pic1 > p{
-    font-size: large;
-    padding-bottom: 10px;
+.news > .pic1 > p {
+  font-size: large;
+  padding-bottom: 10px;
 }
 
-.header2{
-    width: 100%;
-    height: 7vh;
-    background-color: #212121;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header2 {
+  width: 100%;
+  height: 7vh;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bick{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    width: 100%;
-    flex-direction: column;
-    padding: 10px;
-    background-color: black;
+.bick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px;
+  background-color: black;
 }
 
-.bick > .b1{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    padding: 5px;
-    gap: 10px;
+.bick > .b1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
 }
 
-.bick > .b1 > img{
-    width: 740px; 
+.bick > .b1 > img {
+  width: 740px;
 }
 
-.Service{
-   width: 100%;
-   height: 80vh;
-   display: flex;
-   align-content: center;
+.Service {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-content: center;
 }
 
 .s1 {
-    width: 33.4%;
-    height: 80vh;
-   background-image: url(https://www.royalenfield.com/node/assets/service-platform/cost-calculator-banner.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-
+  width: 33.4%;
+  height: 80vh;
+  background-image: url(https://www.royalenfield.com/node/assets/service-platform/cost-calculator-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .s2 {
-    width: 33.4%;
-    height: 80vh;
-   background-image: url(https://www.royalenfield.com/node/assets/service-platform/classic.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-
+  width: 33.4%;
+  height: 80vh;
+  background-image: url(https://www.royalenfield.com/node/assets/service-platform/classic.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .s3 {
-    width: 33.4%;
-    height: 80vh;
-   background-image: url(https://www.royalenfield.com/node/assets/service-platform/Group.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-
+  width: 33.4%;
+  height: 80vh;
+  background-image: url(https://www.royalenfield.com/node/assets/service-platform/Group.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.mini{
-    width: 100%;
-    height: 20vh;
-    background-color: #212121ad;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 422px;
+.mini {
+  width: 100%;
+  height: 20vh;
+  background-color: #212121ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 422px;
+  text-align: center;
 }
 
-.mini:hover{
-      background-color: #DA291C;
+.mini:hover {
+  background-color: #da291c;
 }
 
-.mini > button{
-    margin-top: 7px;
-    background-color: transparent;
-    padding: 10px;
-    border: 1px solid white;
+.mini > button {
+  margin-top: 7px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
 }
 
-.mini > button:hover{
-    background-color: rgb(0, 0, 0);
-    border: 1px solid #000000;
+.mini > button:hover {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid #000000;
 }
 
-.Support{
-display: flex;
-flex-direction: column;
+.Support {
+  display: flex;
+  flex-direction: column;
 }
 
 .Support > .box1 {
-    width: 100%;
-    height: 40vh;
-    display: flex;
+  width: 100%;
+  height: 40vh;
+  display: flex;
 }
 
-.Support > .box1 > .over{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    
+.Support > .box1 > .over {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.Support > .box1 >.over >.b1{
-    background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/tout/support-call.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 40vh;
-    transition: 3s;
-
+.Support > .box1 > .over > .b1 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/tout/support-call.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  transition: 3s;
 }
 
-.Support > .box1> .over >.b1:hover{
+.Support > .box1 > .over > .b1:hover {
   transform: scale(1.1);
   overflow: hidden;
-} 
-
-.Support > .box1 >.over >.b1> .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 10px;
-    gap: 3px;
-       width: 100%;
-       height: 12vh;
-       background-color: #6b6a6a57;
-      margin-top: 200px;
 }
 
-
-.Support > .box1 >.over >.b2{
-    background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/tout/support-write-to-us.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 40vh;
-    transition: 3s;
-
+.Support > .box1 > .over > .b1 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  gap: 3px;
+  width: 100%;
+  height: 12vh;
+  background-color: #6b6a6a57;
+  margin-top: 200px;
 }
 
-.Support > .box1> .over >.b2:hover{
+.Support > .box1 > .over > .b2 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/tout/support-write-to-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  transition: 3s;
+}
+
+.Support > .box1 > .over > .b2:hover {
   transform: scale(1.1);
   overflow: hidden;
-} 
-
-.Support > .box1 >.over >.b2> .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 10px;
-    gap: 3px;
-       width: 100%;
-       height: 12vh;
-       background-color: #6b6a6a57;
-      margin-top: 200px;
-}
-.Support > .box1 >.over >.b3{
-    background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/tout/support-faq.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 40vh;
-    transition: 3s;
-
 }
 
-.Support > .box1> .over >.b3:hover{
+.Support > .box1 > .over > .b2 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  gap: 3px;
+  width: 100%;
+  height: 12vh;
+  background-color: #6b6a6a57;
+  margin-top: 200px;
+}
+.Support > .box1 > .over > .b3 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/tout/support-faq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  transition: 3s;
+}
+
+.Support > .box1 > .over > .b3:hover {
   transform: scale(1.1);
   overflow: hidden;
-} 
-
-.Support > .box1 >.over >.b3> .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 10px;
-    gap: 3px;
-       width: 100%;
-       height: 12vh;
-       background-color: #6b6a6a57;
-      margin-top: 200px;
-}
-.Support > .box1 >.over >.b4{
-    background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/road-side-assistance/roadside-assistance-landing.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 40vh;
-    transition: 3s;
-
 }
 
-.Support > .box1> .over >.b4:hover{
+.Support > .box1 > .over > .b3 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  gap: 3px;
+  width: 100%;
+  height: 12vh;
+  background-color: #6b6a6a57;
+  margin-top: 200px;
+}
+.Support > .box1 > .over > .b4 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/road-side-assistance/roadside-assistance-landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  transition: 3s;
+}
+
+.Support > .box1 > .over > .b4:hover {
   transform: scale(1.1);
   overflow: hidden;
-} 
+}
 
-.Support > .box1 >.over >.b4> .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 10px;
-    gap: 3px;
-       width: 100%;
-       height: 12vh;
-       background-color: #6b6a6a57;
-      margin-top: 200px;
+.Support > .box1 > .over > .b4 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  gap: 3px;
+  width: 100%;
+  height: 12vh;
+  background-color: #6b6a6a57;
+  margin-top: 200px;
 }
 
 .Support > .box2 {
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Support > .box2 > .x1{
-    background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/owners-manual.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    padding-bottom: 40px;
-    flex-direction: column;
+.Support > .box2 > .x1 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/owners-manual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  flex-direction: column;
 }
-.Support > .box2 > .x2{
-    background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/digital-quick-book.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    padding-bottom: 40px;
-    flex-direction: column;
+.Support > .box2 > .x2 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/digital-quick-book.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  flex-direction: column;
 }
-.Support > .box2 > .x3{
-    background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/service-recall.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    padding-bottom: 40px;
-    flex-direction: column;
+.Support > .box2 > .x3 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/service-recall.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  flex-direction: column;
 }
-.Support > .box2 > .x4{
-    background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/service-recall-classic-350.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content:flex-end;
-    padding-bottom: 40px;
-    flex-direction: column;
-}
-
-.box2 button{
-    margin-top: 7px;
-    background-color: transparent;
-    padding: 10px;
-    border: 1px solid white;}
-
-.box2 button:hover{
-    background-color: rgb(212, 44, 44);
-   border: 1px solid transparent;
+.Support > .box2 > .x4 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/support/home/service-recall-classic-350.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  flex-direction: column;
 }
 
-.Locate{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    }
-    
-    .Locate > .box1 {
-        width: 100%;
-        height: 40vh;
-        display: flex;
-        
-    }
-    
-    .Locate > .box1 > .over{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    
-    .Locate > .box1 >.over >.b1{
-        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/home/locate-us/dealers-landing.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 50vh;
-    
-    }
-    
-    
-    .Locate > .box1 >.over >.b1> .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 10px;
-           width: 100%;
-           height: 15vh;
-           background-color: #000000da;
-          margin-top: 200px;
-    }
+.box2 button {
+  margin-top: 7px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
+}
 
-    .Locate > .box1 >.over >.b1> .content>h2{
-        font-size: 20px;
-    }
-    
-    .Locate > .box1 >.over >.b1> .content > button{
-        margin-top: 7px;
-        background-color: transparent;
-        padding: 10px;
-        border: 1px solid white;}
-    
-        .Locate > .box1 >.over >.b1> .content > button:hover{
-        background-color: rgb(212, 44, 44);
-       border: 1px solid transparent;
-    }
+.box2 button:hover {
+  background-color: rgb(212, 44, 44);
+  border: 1px solid transparent;
+}
 
-    /* ............................................ */
+.Locate {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
-    .Locate > .box1 >.over >.b2{
-        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/service-centre.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 50vh;
-    
-    }
-    
-    
-    .Locate > .box1 >.over >.b2> .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 10px;
-           width: 100%;
-           height: 15vh;
-           background-color: #000000da;
-          margin-top: 200px;
-    }
+.Locate > .box1 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
 
-    .Locate > .box1 >.over >.b2> .content>h2{
-        font-size: 20px;
-    }
-    
-    .Locate > .box1 >.over >.b2> .content > button{
-        margin-top: 7px;
-        background-color: transparent;
-        padding: 10px;
-        border: 1px solid white;}
-    
-        .Locate > .box1 >.over >.b2> .content > button:hover{
-        background-color: rgb(212, 44, 44);
-       border: 1px solid transparent;
-    }
-    /* ............................................ */
+.Locate > .box1 > .over {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-    .Locate > .box1 >.over >.b3{
-        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/genuine-parts.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 50vh;
-    
-    }
-    
-    
-    .Locate > .box1 >.over >.b3> .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 10px;
-           width: 100%;
-           height: 15vh;
-           background-color: #000000da;
-          margin-top: 200px;
-    }
+.Locate > .box1 > .over > .b1 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/home/locate-us/dealers-landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
 
-    .Locate > .box1 >.over >.b3> .content>h2{
-        font-size: 20px;
-    }
-    
-    .Locate > .box1 >.over >.b3> .content > button{
-        margin-top: 7px;
-        background-color: transparent;
-        padding: 10px;
-        border: 1px solid white;}
-    
-        .Locate > .box1 >.over >.b3> .content > button:hover{
-        background-color: rgb(212, 44, 44);
-       border: 1px solid transparent;
-    }
+.Locate > .box1 > .over > .b1 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 15vh;
+  background-color: #000000da;
+  margin-top: 200px;
+}
 
+.Locate > .box1 > .over > .b1 > .content > h2 {
+  font-size: 20px;
+}
 
-    /* box 2 */
-    .Locate > .box2 {
-        width: 100%;
-        height: 40vh;
-        display: flex;
-        
-    }
-    
-    .Locate > .box2 > .over{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    
-    .Locate > .box2 >.over >.b1{
-        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/reown.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 50vh;
-    
-    }
-    
-    
-    .Locate > .box2 >.over >.b1> .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 10px;
-           width: 100%;
-           height: 15vh;
-           background-color: #000000da;
-          margin-top: 200px;
-    }
+.Locate > .box1 > .over > .b1 > .content > button {
+  margin-top: 7px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
+}
 
-    .Locate > .box2 >.over >.b1> .content>h2{
-        font-size: 20px;
-    }
-    
-    .Locate > .box2 >.over >.b1> .content > button{
-        margin-top: 7px;
-        background-color: transparent;
-        padding: 10px;
-        border: 1px solid white;}
-    
-        .Locate > .box2 >.over >.b1> .content > button:hover{
-        background-color: rgb(212, 44, 44);
-       border: 1px solid transparent;
-    }
+.Locate > .box1 > .over > .b1 > .content > button:hover {
+  background-color: rgb(212, 44, 44);
+  border: 1px solid transparent;
+}
 
-    /* ............................................ */
+/* ............................................ */
 
-    .Locate > .box2 >.over >.b2{
-        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/GGC-locate-us.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 50vh;
-    
-    }
-    
-    
-    .Locate > .box2 >.over >.b2> .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 10px;
-           width: 100%;
-           height: 15vh;
-           background-color: #000000da;
-          margin-top: 200px;
-    }
+.Locate > .box1 > .over > .b2 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/service-centre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
 
-    .Locate > .box2 >.over >.b2> .content>h2{
-        font-size: 20px;
-    }
-    
-    .Locate > .box2 >.over >.b2> .content > button{
-        margin-top: 7px;
-        background-color: transparent;
-        padding: 10px;
-        border: 1px solid white;}
-    
-        .Locate > .box2 >.over >.b2> .content > button:hover{
-        background-color: rgb(212, 44, 44);
-       border: 1px solid transparent;
-    }
-    /* ............................................ */
+.Locate > .box1 > .over > .b2 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 15vh;
+  background-color: #000000da;
+  margin-top: 200px;
+}
 
-    .Locate > .box2 >.over >.b3{
-        background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/leh-service.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 50vh;
-    
-    }
-    
-    
-    .Locate > .box2 >.over >.b3> .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-size: 10px;
-           width: 100%;
-           height: 15vh;
-           background-color: #000000da;
-          margin-top: 200px;
-    }
+.Locate > .box1 > .over > .b2 > .content > h2 {
+  font-size: 20px;
+}
 
-    .Locate > .box2 >.over >.b3> .content>h2{
-        font-size: 20px;
-    }
-    
-    .Locate > .box2 >.over >.b3> .content > button{
-        margin-top: 7px;
-        background-color: transparent;
-        padding: 10px;
-        border: 1px solid white;}
-    
-        .Locate > .box2 >.over >.b3> .content > button:hover{
-        background-color: rgb(212, 44, 44);
-       border: 1px solid transparent;
-    }
+.Locate > .box1 > .over > .b2 > .content > button {
+  margin-top: 7px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
+}
 
-  footer{
-    width: 100%;
-    color: white        ;
-    }
-    
-    footer > .box{
-        height: 32vh;
-        background-color: #140f0f;
-       display: flex;
-       align-items: center;
-       justify-content: space-evenly;
-       
+.Locate > .box1 > .over > .b2 > .content > button:hover {
+  background-color: rgb(212, 44, 44);
+  border: 1px solid transparent;
+}
+/* ............................................ */
+
+.Locate > .box1 > .over > .b3 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/genuine-parts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.Locate > .box1 > .over > .b3 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 15vh;
+  background-color: #000000da;
+  margin-top: 200px;
+}
+
+.Locate > .box1 > .over > .b3 > .content > h2 {
+  font-size: 20px;
+}
+
+.Locate > .box1 > .over > .b3 > .content > button {
+  margin-top: 7px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.Locate > .box1 > .over > .b3 > .content > button:hover {
+  background-color: rgb(212, 44, 44);
+  border: 1px solid transparent;
+}
+
+/* box 2 */
+.Locate > .box2 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
+
+.Locate > .box2 > .over {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Locate > .box2 > .over > .b1 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/reown.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.Locate > .box2 > .over > .b1 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 15vh;
+  background-color: #000000da;
+  margin-top: 200px;
+}
+
+.Locate > .box2 > .over > .b1 > .content > h2 {
+  font-size: 20px;
+}
+
+.Locate > .box2 > .over > .b1 > .content > button {
+  margin-top: 7px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.Locate > .box2 > .over > .b1 > .content > button:hover {
+  background-color: rgb(212, 44, 44);
+  border: 1px solid transparent;
+}
+
+/* ............................................ */
+
+.Locate > .box2 > .over > .b2 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/landing/GGC-locate-us.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.Locate > .box2 > .over > .b2 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 15vh;
+  background-color: #000000da;
+  margin-top: 200px;
+}
+
+.Locate > .box2 > .over > .b2 > .content > h2 {
+  font-size: 20px;
+}
+
+.Locate > .box2 > .over > .b2 > .content > button {
+  margin-top: 7px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.Locate > .box2 > .over > .b2 > .content > button:hover {
+  background-color: rgb(212, 44, 44);
+  border: 1px solid transparent;
+}
+/* ............................................ */
+
+.Locate > .box2 > .over > .b3 {
+  background-image: url(https://www.royalenfield.com/content/dam/royal-enfield/india/locate-us/leh-service.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.Locate > .box2 > .over > .b3 > .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  width: 100%;
+  height: 15vh;
+  background-color: #000000da;
+  margin-top: 200px;
+}
+
+.Locate > .box2 > .over > .b3 > .content > h2 {
+  font-size: 20px;
+}
+
+.Locate > .box2 > .over > .b3 > .content > button {
+  margin-top: 7px;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.Locate > .box2 > .over > .b3 > .content > button:hover {
+  background-color: rgb(212, 44, 44);
+  border: 1px solid transparent;
+}
+
+footer {
+  width: 100%;
+  color: white;
+}
+
+footer > .box {
+  height: 32vh;
+  background-color: #140f0f;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer > .box > .b1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+footer > .box > .b1 > img {
+  width: 100px;
+}
+footer > .box > .b1 > a {
+  font-size: x-large;
+  text-decoration: none;
+}
+
+footer > .box1 {
+  height: 20vh;
+  background-color: #5d5b5b;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer > .box1 > ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+footer > .box1 > ul > li:hover {
+  cursor: pointer;
+  color: #ee675d;
+}
+
+footer > .box2 {
+  height: 15vh;
+  background-color: #a9a7a7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+footer > .box2 > .logo {
+  width: 300px;
+}
+
+footer > .box2 > .icon > i {
+  font-size: 30px;
+  color: #da291c;
+}
+footer > .box2 > .icon > i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+footer > .box3 {
+  height: 10vh;
+  background-color: #a9a7a7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  nav > .logo {
+    width: 150px;
   }
-  footer > .box >.b1{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       flex-direction: column;
-       gap: 10px;
+  nav > ul {
+    display: none;
   }
-  footer > .box >.b1 > img{
-   width: 100px;
- }
-  footer > .box >.b1 > a{
-      font-size: x-large;
-      text-decoration: none;
-      
- }
 
- footer > .box1{
+  nav > .right > .box {
+    display: none;
+  }
+
+  .ri-search-line {
+    display: none;
+  }
+
+  .ri-menu-line {
+    display: initial;
+  }
+
+  main > img {
+    width: 100%;
+  }
+
+  .bick > .b1 > img {
+    width: 180px;
+  }
+
+  .header1,
+  .header2 {
+    height: 5vh;
+  }
+
+  .news {
+    flex-wrap: wrap;
+  }
+
+  .Service {
+    flex-direction: column;
+    width: 138.5vh;
+    height: 240vh;
+  }
+
+  .mini {
+    margin-top: 509px;
+  }
+
+  .Support > .box1 {
+    height: 150vh;
+    flex-direction: column;
+  }
+
+  .Support > .box2 {
+    height: 150vh;
+    flex-direction: column;
+  }
+
+  .Locate > .box1 {
+    flex-direction: column;
+    height: 147vh;
+  }
+  .Locate > .box1 > .over > .b1 > .content {
+    margin-top: 295px;
+  }
+  .Locate > .box1 > .over > .b2 > .content {
+    margin-top: 295px;
+  }
+  .Locate > .box1 > .over > .b3 > .content {
+    margin-top: 295px;
+  }
+
+  .Locate > .box2 {
+    flex-direction: column;
+    height: 150vh;
+  }
+
+  .Locate > .box2 > .over > .b1 > .content {
+    margin-top: 300px;
+  }
+  .Locate > .box2 > .over > .b2 > .content {
+    margin-top: 300px;
+  }
+  .Locate > .box2 > .over > .b3 > .content {
+    margin-top: 300px;
+  }
+
+  footer > .box > .b1 > img {
+    width: 60px;
+  }
+
+  footer > .box > .b1 > a {
+    font-size: 13px;
+  }
+
+  footer > .box {
+    height: 16vh;
+  }
+
+  footer > .box1 {
+    height: 38vh;
+  }
+  footer > .box1 > ul {
+    gap: 3px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer > .box2 > .logo {
+    width: 196px;
+  }
+
+  footer > .box2 {
+    flex-direction: column;
+  }
+
+  footer .box3 {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
     height: 20vh;
-    background-color: #5d5b5b;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
+  }
 }
 
-footer > .box1 >ul{
-list-style: none;
-display: flex;
-gap: 50px;
-}
+@media (min-width: 600px) and (max-width: 1200px) {
+  main {
+    width: 75vh;
+  }
+  footer {
+    width: 75vh;
+  }
 
-footer > .box1 >ul>li:hover{
-    cursor: pointer;
-    color: #ee675d;
-}
+  nav > ul {
+    display: none;
+  }
 
-footer > .box2{
-    height: 15vh;
-    background-color: #a9a7a7;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   border-bottom: 1px solid rgb(255, 255, 255);
-}
+  nav > ul {
+    display: none;
+  }
 
-footer > .box2 >.logo{
-width: 300px;
-}
+  nav > .right > .box {
+    display: none;
+  }
 
-footer > .box2 >.icon >i{
-font-size: 30px;
-color: #DA291C;
-}
-footer > .box2 >.icon >i:hover{
-    color: white;
-    cursor: pointer;
-}
+  .ri-search-line {
+    display: none;
+  }
 
-footer > .box3{
-    height: 10vh;
-    background-color: #a9a7a7;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-}
+  .ri-menu-line {
+    display: initial;
+  }
 
+  main > img {
+    width: 100%;
+  }
 
-    @media screen and (max-width:600px) {
-    nav >  .logo{
-        width: 150px;
-    }
-    nav > ul {
-        display: none;
-    }
+  .bick > .b1 > img {
+    width: 180px;
+  }
 
-    nav > .right >.box{
-        display: none;
-    }
+  .header1,
+  .header2 {
+    height: 5vh;
+  }
 
-    .ri-search-line{   
-        display: none;
-    }
+  .news {
+    flex-wrap: wrap;
+  }
 
-    .ri-menu-line{
-        display:initial;
-    }
-}
+  .Service {
+    flex-direction: column;
+    width: 224.5vh;
+    height: 240vh;
+  }
 
-@media (min-width:600px) and (max-width:1080px) {
- 
-    nav > ul {
-        display: none;
-    }
-    
-    nav > ul {
-        display: none;
-    }
+  .mini {
+    margin-top: 615px;
+  }
 
-    nav > .right >.box{
-        display: none;
-    }
-    
-    .ri-search-line{   
-        display: none;
-    }
+  .Support > .box1 {
+    height: 120vh;
+    flex-direction: column;
+  }
 
-    .ri-menu-line{
-        display:initial;
-    }
+  .Support > .box2 {
+    height: 120vh;
+    flex-direction: column;
+  }
 
+  .Locate > .box1 {
+    flex-direction: column;
+    height: 147vh;
+  }
+  .Locate > .box1 > .over > .b1 > .content {
+    margin-top: 357px;
+  }
+  .Locate > .box1 > .over > .b2 > .content {
+    margin-top: 357px;
+  }
+  .Locate > .box1 > .over > .b3 > .content {
+    margin-top: 357px;
+  }
+
+  .Locate > .box2 {
+    flex-direction: column;
+    height: 150vh;
+  }
+
+  .Locate > .box2 > .over > .b1 > .content {
+    margin-top: 360px;
+  }
+  .Locate > .box2 > .over > .b2 > .content {
+    margin-top: 360px;
+  }
+  .Locate > .box2 > .over > .b3 > .content {
+    margin-top: 360px;
+  }
+
+  footer > .box > .b1 > img {
+    width: 60px;
+  }
+
+  footer > .box > .b1 > a {
+    font-size: 13px;
+  }
+
+  footer > .box {
+    height: 16vh;
+  }
+
+  footer > .box1 {
+    height: 38vh;
+  }
+  footer > .box1 > ul {
+    gap: 3px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer > .box2 > .logo {
+    width: 196px;
+  }
+
+  footer > .box2 {
+    flex-direction: column;
+  }
+
+  footer .box3 {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    height: 20vh;
+  }
 }
