@@ -6,12 +6,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: white;
+
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
