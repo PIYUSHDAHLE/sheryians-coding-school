@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Overlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="https://www.svgrepo.com/show/303470/puma-logo-logo.svg" alt="NA">
+        </div>
+        <div class="mid">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Product</li>
+                <li id="sign-in">Sign in</li>
+            </ul>
+        </div>
+        <div class="right">
+            <i class="ri-search-line"></i>
+            <i class="ri-heart-fill"></i>
+            <i class="ri-shopping-cart-2-line"></i>
+        </div>
+    </nav>
+    <div class="banner">
+        <img src="https://wallpapers.com/images/hd/puma-shoes-ignite-sld7hbq8kbzdez2a.jpg" alt="NA">
+    </div>
+
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <form>
+            <h2>Sign in</h2>
+            
+            <div class="element">
+                <label for="email">Email : </label>
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+            
+            <div class="element">
+                <label for="password">Password : </label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            
+            <div class="element2">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+
+            <div class="element">
+                <button>Sign in</button>
+            </div>
+            <div class="element3">
+                <a href="#">Forget Password ?</a>
+            </div>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
