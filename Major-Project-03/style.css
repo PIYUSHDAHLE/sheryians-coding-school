@@ -16,8 +16,10 @@ body {
 
 main > nav {
   width: 100%;
-  height: 25vh;
+  height: 22vh;
   background-color: #02b8a8;
+  position: sticky;
+  top: 0;
 }
 
 nav > .line1 {
@@ -84,7 +86,7 @@ nav > .line3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 nav > .line3 > .left > ul {
@@ -108,7 +110,7 @@ nav > .line3 > .right {
 }
 
 nav > .line3 > .right > button {
-  padding: 15px;
+  padding: 10px;
   border: none;
   font-size: 15px;
   border-radius: 10px;
@@ -121,8 +123,12 @@ nav > .line3 > .right > button:hover {
   color: white;
 }
 nav > .line3 > .right > img {
-  width: 100px;
+  width: 80px;
   border-radius: 10px;
+}
+
+nav > .line3 > .right > img:hover{
+    cursor: pointer;
 }
 
 .glass{
@@ -356,4 +362,89 @@ flex-direction: column;
 
 .gls-col > .coll >img {
     width: 300px;
+}
+
+footer{
+    background-color: #010045;
+    color: #fff;
+    width: 100%;
+    height: 65vh;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+footer > .f-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+}
+footer > .f-box > .f-left{
+    display: flex;
+    gap: 50px;
+}
+
+footer > .f-box > .f-left > .c1 > h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+footer > .f-box > .f-left > .c1 >ul{
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+footer > .f-box > .f-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer > .f-box > .f-right >.para>p{
+text-align: center;
+}
+
+footer > .last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > .last >.le{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > .last >.le >ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+footer > .last >.ri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer > .last >.ri> .icon{
+ font-size: 25px;
+}
+
+footer > .last >.ri> .icon >i:hover,
+footer > .last >.le >ul>li:hover,
+footer > .f-box > .f-left > .c1 >ul>li:hover,
+footer > .f-box > .f-left > .c1 > h2:hover{
+    color: #02b8a8;
+    cursor: pointer;
 }
