@@ -258,3 +258,60 @@ article >button{
 .head-banner{
     width: 100%;
 }
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box >.b1 {
+    padding: 10px 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.box >.b1 >.left{
+     width: 50%;
+}
+.box >.b1 >.right{
+     width: 50%;
+}
+.box >.b1 > .left > img{
+     width: 500px;
+}
+.box >.b1 > .right > img{
+     width: 500px;
+     padding: 8px 5px;
+}
+
+.box2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box2 >.b2 {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.box2 >.b2 >.left{
+     width: 50%;
+}
+.box2 >.b2 >.right{
+     width: 50%;
+}
+.box2 >.b2 > .left > img{
+     width: 700px;
+}
+.box2 >.b2 > .right > img{
+     width: 700px;
+}
