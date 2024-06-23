@@ -315,3 +315,45 @@ article >button{
 .box2 >.b2 > .right > img{
      width: 700px;
 }
+
+.main-collection >img{
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.gls-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.gls-col > .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    width: 80%;
+    border-bottom: 1px solid grey;
+    margin: 20px 0; 
+}
+
+.gls-col > .line> p{
+    color: #02b8a8;
+}
+
+.gls-col > .line> p:hover{
+    color: #010045;
+    cursor: pointer;
+}
+
+.gls-col > .coll{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.gls-col > .coll >img {
+    width: 300px;
+}
