@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main > nav {
+  width: 100%;
+  height: 25vh;
+  background-color: #02b8a8;
+}
+
+nav > .line1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+nav > .line1 > .left > ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  color: white;
+}
+nav > .line1 > .right > ul {
+  list-style: none;
+  color: white;
+}
+
+nav > .line1 > .left > ul > li:hover,
+nav > .line1 > .right > ul > li:hover {
+  color: rgb(46, 46, 87);
+  cursor: pointer;
+}
+
+nav > .line2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > .line2 > .num {
+  font-size: 18px;
+  display: flex;
+  gap: 5px;
+  color: white;
+}
+
+nav > .line2 > input {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+nav > .line2 > .last > ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: white;
+}
+
+nav > .line2 > .num:hover,
+nav > .line2 > .last > ul > li:hover {
+  color: rgb(46, 46, 87);
+  cursor: pointer;
+}
+
+nav > .line3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav > .line3 > .left > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #010045;
+}
+
+nav > .line3 > .left > ul > li:hover {
+  cursor: pointer;
+  color: white;
+}
+nav > .line3 > .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav > .line3 > .right > button {
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bolder;
+}
+
+nav > .line3 > .right > button:hover {
+  background-color: #010045;
+  color: white;
+}
+nav > .line3 > .right > img {
+  width: 100px;
+  border-radius: 10px;
+}
