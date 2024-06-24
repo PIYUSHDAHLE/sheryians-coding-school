@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 html,
@@ -17,7 +18,7 @@ body {
 main > nav {
   width: 100%;
   height: 22vh;
-  background-color: #02b8a8;
+  background-color: #FBF9F7;
   position: sticky;
   top: 0;
 }
@@ -27,22 +28,23 @@ nav > .line1 {
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
+
 }
 
 nav > .line1 > .left > ul {
   list-style: none;
   display: flex;
   gap: 5px;
-  color: white;
+  color: #010045;
 }
 nav > .line1 > .right > ul {
   list-style: none;
-  color: white;
+  color: #010045;
 }
 
 nav > .line1 > .left > ul > li:hover,
 nav > .line1 > .right > ul > li:hover {
-  color: rgb(46, 46, 87);
+  color: rgb(114, 214, 209);
   cursor: pointer;
 }
 
@@ -56,7 +58,7 @@ nav > .line2 > .num {
   font-size: 18px;
   display: flex;
   gap: 5px;
-  color: white;
+  color: #010045;
 }
 
 nav > .line2 > input {
@@ -64,7 +66,8 @@ nav > .line2 > input {
   padding: 10px;
   border-radius: 10px;
   outline: none;
-  border: none;
+  border: 1px solid grey;
+
 }
 
 nav > .line2 > .last > ul {
@@ -73,12 +76,12 @@ nav > .line2 > .last > ul {
   gap: 30px;
   padding: 0 20px;
   font-size: 18px;
-  color: white;
+  color: #010045;
 }
 
 nav > .line2 > .num:hover,
 nav > .line2 > .last > ul > li:hover {
-  color: rgb(46, 46, 87);
+  color: rgb(114, 214, 209);
   cursor: pointer;
 }
 
@@ -100,7 +103,7 @@ nav > .line3 > .left > ul {
 
 nav > .line3 > .left > ul > li:hover {
   cursor: pointer;
-  color: white;
+  color:#02b8a8;
 }
 nav > .line3 > .right {
   display: flex;
@@ -114,7 +117,8 @@ nav > .line3 > .right > button {
   border: none;
   font-size: 15px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(135, 229, 217);
+  color: #010045;
   font-weight: bolder;
 }
 
@@ -137,6 +141,7 @@ nav > .line3 > .right > img:hover{
     justify-content: space-between;
     align-items: center;
     padding: 20px; 
+    background-color: #FBF9F7;
 }
 
 .glass > .g1{
@@ -161,7 +166,7 @@ nav > .line3 > .right > img:hover{
 
 article{
     width: 100%;
-    height: 40vh;
+    height: 45vh;
     background-color: #E4FAF2;
     color: #000139;
     display: flex;
@@ -174,18 +179,27 @@ article{
 
 article >p{
     font-size: 30px;
+    overflow: hidden;
 }
 
 article >.para{
     font-size: 100px;
+    overflow: hidden;
 }
 
 article >button{
     font-size: 20px;
     padding: 10px;
+    overflow: hidden;
     border: 3px solid #000139;
     border-radius: 20px;
+    background-color: #E4FAF2;
     color: #000139;
+}
+
+article >button:hover{
+  background-color: #000139;
+  color: #E4FAF2;
 }
 
 .collection{
@@ -195,7 +209,7 @@ article >button{
     align-items: center;
     justify-content: center;
     padding: 50px;
-
+    overflow: hidden;
 }
 
 .collection >.left{
@@ -227,7 +241,7 @@ article >button{
 }
 
 .collection >.right>.pro>img{
-    width: 280px;
+    width: 250px;
 }
 
 .collection >.right>.pro>p{
@@ -239,7 +253,7 @@ article >button{
     font-size: 18px;
     padding: 10px;
     width: 140px;
-    margin-left: 73px;
+    margin-left: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -448,3 +462,137 @@ footer > .f-box > .f-left > .c1 > h2:hover{
     color: #02b8a8;
     cursor: pointer;
 }
+
+@media (min-width: 600px) and (max-width: 1000px){
+  main > nav > .line1 {
+    display: none;
+  }
+  
+  nav > .line2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+
+  nav > .line3 {
+    gap: 50px;
+  }
+  nav > .line3 > .left > ul{
+    flex-wrap: wrap;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  nav > .line3 > .right > button{
+    display: none;
+  }
+
+  nav > .line3 > .right > img {
+    width: 70px;
+  }
+
+  .glass {
+    flex-wrap: wrap;
+  }
+
+  .glass > .g1{
+    margin: 10px;
+  }
+  .glass > .g1> img{
+    width: 300px;
+  }
+
+
+  article{
+    height: 30vh;
+
+}
+
+article >p{
+    font-size: 20px;
+}
+
+article >.para{
+    font-size: 50px;
+}
+
+article >button{
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid #000139;
+    border-radius: 20px;
+    color: #000139;
+}
+
+.collection >.left{
+  display: none;
+}
+
+.collection >.right{
+  flex-wrap: wrap;
+}
+
+.collection >.right>.pro>img{
+  width: 200px;
+}
+
+.collection >.right>.pro>p{
+
+  font-size: 15px;
+}
+
+.collection >.right>.pro>button{
+  font-size: 10px;
+  padding: 5px;
+  width: 80px;
+  margin-left: 61px;
+}
+
+.box >.b1 > .left > img{
+  width: 300px;
+}
+.box >.b1 > .right > img{
+  width: 300px;
+  padding: 8px 5px;
+}
+
+.box2 >.b2 > .left > img{
+  width: 350px;
+}
+.box2 >.b2 > .right > img{
+  width: 350px;
+}
+
+.main-collection {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-collection>img{
+  width: 90%;
+}
+  
+.gls-col > .line{
+  width: 70%;
+}
+
+.gls-col > .line>h1{
+  font-size: 25px;
+}
+
+.gls-col > .coll{
+  display: flex;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.gls-col > .coll >img {
+  width: 150px;
+}
+
+} 
