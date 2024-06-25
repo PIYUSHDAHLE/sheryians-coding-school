@@ -249,7 +249,7 @@ article >button:hover{
     font-size: 20px;
 }
 
-.collection >.right>.pro>button{
+.collection > .right > .pro > button{
     font-size: 18px;
     padding: 10px;
     width: 140px;
@@ -263,7 +263,7 @@ article >button:hover{
     color: white;
 }
 
-.collection >.right>.pro>button:hover{
+.collection > .right > .pro > button:hover{
     background-color: #000139;
 }
     
@@ -462,6 +462,182 @@ footer > .f-box > .f-left > .c1 > h2:hover{
     color: #02b8a8;
     cursor: pointer;
 }
+
+@media screen and (max-width:600px){
+  main > nav > .line1 {
+    display: none;
+  }
+  
+  nav > .line2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav > .line2 > .last > ul{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav > .line3 {
+    display: none;
+  }
+
+  .glass {
+    flex-wrap: wrap;
+  }
+
+  .glass > .g1{
+    margin: 10px;
+  }
+  .glass > .g1> img{
+    width: 300px;
+  }
+
+
+article >p{
+    font-size: 20px;
+}
+
+article >.para{
+  text-align: center;
+    font-size: 50px;
+}
+
+article >button{
+    font-size: 20px;
+    padding: 10px;
+    border: 3px solid #000139;
+    border-radius: 20px;
+    color: #000139;
+}
+
+.collection{
+  height: 90vh;
+}
+
+.collection >.left{
+  display: none;
+}
+
+.collection >.right{
+  flex-wrap: wrap;
+}
+
+.collection >.right>.pro>img{
+  width: 200px;
+}
+
+.collection >.right>.pro>p{
+
+  font-size: 15px;
+}
+
+.collection >.right>.pro>button{
+  font-size: 10px;
+  padding: 5px;
+  width: 80px;
+  margin-left: 61px;
+}
+
+.headline{
+  font-size: 20px;
+}
+
+.box >.b1 > .left > img{
+  width: 150px;
+}
+.box >.b1 > .right > img{
+  width: 150px;
+  padding: 8px 5px;
+}
+
+.box2 >.b2 > .left > img{
+  width: 180px;
+}
+.box2 >.b2 > .right > img{
+  width: 180px;
+}
+
+.main-collection {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-collection>img{
+  width: 90%;
+}
+  
+.gls-col > .line{
+  width: 80%;
+}
+
+.gls-col > .line>h1{
+  font-size: 15px;
+}
+
+.gls-col > .coll{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.gls-col > .coll >img {
+  width: 100px;
+}
+
+footer{
+  height: 78vh;
+  padding: 10px;
+}
+
+footer > .f-box{
+ flex-wrap: wrap;
+ gap: 50px;
+}
+footer > .f-box > .f-left{
+  gap: 50px;
+}
+
+footer > h1{
+  padding-top: 10px;
+font-size: 20px;
+text-align: center;
+}
+footer >p{
+font-size: 10px;
+text-align: center;
+}
+
+footer > .f-box > .f-left > .c1 > h2{
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+footer > .f-box > .f-right{
+  display: flex;
+  gap: 20px;
+}
+
+footer > .f-box > .f-right >.app{
+  padding-left: 25px;
+}
+footer > .f-box > .f-right >.para{
+padding-left: 25px;
+}
+
+footer > .last{
+gap: 20px;
+  flex-direction: column;
+}
+
+
+}
+
 
 @media (min-width: 600px) and (max-width: 1000px){
   main > nav > .line1 {
