@@ -21,6 +21,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 nav .left{
@@ -103,6 +106,7 @@ nav .right{
 
 .carousel {
     position: relative;
+    top: 50px;
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -136,10 +140,12 @@ nav .right{
 
 .carousel-control.prev {
     left: 10px;
+    z-index: 0;
 }
 
 .carousel-control.next {
     right: 10px;
+    z-index: 0;
 }
 
 /* home collection section */
@@ -154,14 +160,14 @@ section .line {
 }
 
 section h1{
-      padding: 10px 20px;
+      padding: 10px 30px;
       color: white;
       font-weight: 300;
   }
   
   section .line img {
-    width: 290px;
-    height: 22vh;
+    width: 230px;
+    height: 20vh;
     object-fit: cover;
     transition: all 700ms ease;
     border-radius: 10px;
