@@ -148,6 +148,7 @@ section .line {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     padding: 20px 0px;
 }
@@ -170,3 +171,18 @@ section h1{
     transform: scale(1.05);
     cursor: pointer;
   }
+
+  .heading-section{
+      width: 100%;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#E21276;
+      color: white;
+  }
+
+  .banner img{
+    width: 100%;
+  }
+
