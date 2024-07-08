@@ -32,21 +32,53 @@ nav .left{
 nav .left .logo{
    width: 170px;
 }
-nav .left ul{
-   list-style: none;
+nav .left .list{
    display: flex;
    gap: 20px;
+   
+}
+nav .left .list a{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
    font-size: 15px;
-   font-weight: 600;
+   font-weight: 500;
+   text-decoration: none;
+   color: white;
 }
 
-nav .left ul li.active{
-color: #E11274;
-}
 
-nav .left ul li:hover{
-    cursor: pointer;
+nav a:nth-child(1):focus{
+    color: #E21276;
 }
+    nav a:nth-child(1):hover{
+        color: #FF8F00;
+    }
+    nav a:nth-child(2):focus{
+        color: #E21276;
+    }
+    nav a:nth-child(2):hover{
+    
+        color: #FF8F00;
+    }
+    nav a:nth-child(3):focus{
+        color: #E21276;
+    }
+    nav a:nth-child(3):hover{
+    color: #FF8F00;
+    }
+    nav a:nth-child(4):focus{
+        color: #E21276;
+    }
+    nav a:nth-child(4):hover{
+    color: #FF8F00;
+    }
+    nav a:nth-child(5):focus{
+        color: #E21276;
+    }
+    nav a:nth-child(5):hover{
+    color: #FF8F00;
+    }
 
 nav .right{
     display: flex;
@@ -61,3 +93,50 @@ nav .right{
     font-size: 25px;
  }
 
+  /* banner carousel section  */
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
