@@ -26,11 +26,11 @@
         <div class="left">
           <img src="img/LOGO.svg" class="logo" alt="NA" />
          <div class="list">
-            <a href="#">Home</a>
-                 <a href="#"> Web Series</a>
-                 <a href="#"> Movies</a>
-                 <a href="#"> Romance</a>
-                 <a href="#"> Comedy</a>
+                 <a onclick="scrollToSection('section1')">Home</a>
+                 <a onclick="scrollToSection('section2')"> Web Series</a>
+                 <a onclick="scrollToSection('section3')"> Movies</a>
+                 <a onclick="scrollToSection('section4')"> Romance</a>
+                 <a onclick="scrollToSection('section5')"> Comedy</a>
            
          </div>
         </div>
@@ -41,7 +41,7 @@
       </nav>
 
 <!-- banner carousel section -->
-    <div class="carousel">
+    <div id="section1" class="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://m.media-amazon.com/images/S/sonata-images-prod/ATV_IN_Desktop_CAKS3/53513cb5-4334-4d60-bbf3-866114236969.__SX3800__SY2138__QL60__._TTW_.jpeg" alt="Image 1">
@@ -194,7 +194,7 @@
    </section>
 
    <!-- WEB SERIES SECTION -->
-
+<div class="hide" id="section2"></div>
 <section class="heading-section">
     <h2>WEB SERIES</h2>
 </section>
@@ -340,7 +340,7 @@
 </section>
 
    <!-- MOVIES SECTION -->
-
+   <div class="hide" id="section3"></div>
    <section class="heading-section">
     <h2>MOVIES</h2>
 </section>
@@ -486,7 +486,7 @@
 </section>
 
    <!-- ROMANCE SECTION -->
-
+   <div class="hide" id="section4"></div>
    <section class="heading-section">
     <h2>ROMANCE</h2>
 </section>
@@ -633,7 +633,7 @@
 
 
    <!-- COMEDY SECTION -->
-
+   <div class="hide" id="section5"></div>
    <section class="heading-section">
     <h2>COMEDY</h2>
 </section>

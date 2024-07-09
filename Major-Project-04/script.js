@@ -51,4 +51,13 @@ document.querySelector('.carousel-control.prev').addEventListener('click', () =>
 
 startAutoplay();
 
+//Targeting from navbar list name to there heading page
+function scrollToSection(sectionId) {
+    var element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        element.style.margin = "10px 0px";
+    }
+}
+
 
