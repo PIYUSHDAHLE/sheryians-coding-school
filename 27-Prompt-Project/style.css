@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Roboto", sans-serif;
+font-family: "Poppins", sans-serif;
+}
+
+html, body{
+height: 100%;
+width: 100%;
+}
+
+body {
+   background-image: url(https://analyticsindiamag.com/wp-content/uploads/2021/12/mcd-banner_11zon.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/*navbar section */
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    background-color: #DC0001;
+    color: #FFBD05;
+
+}
+
+
+nav img {
+    width: 50px;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+}
+
+nav .left p {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+nav .mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .mid input {
+    padding: 7px;
+    width: 500px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+nav .mid i {
+    padding: 6.1px;
+    background-color: #FFBD05;
+    color:white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+}
+
+nav .mid i:hover{
+    cursor: pointer;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav>.right>i {
+    font-size: 20px;
+}
+
+nav .right .common {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav .right .common i {
+    font-size: 20px;
+}
+
+nav .right .common p {
+    font-size: 20px;
+}
+
+nav .right .common:hover,
+nav>.right>i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.form{
+    color: #FFBD05;
+    width: 50%;
+    height: 70vh;
+    background-color: #ffffff46;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.form h1{
+    color: white;
+}
+
+.form h4{
+ margin-bottom: 20px;
+}
+
+.form > .line > input {
+ padding: 5px 10px;
+ font-size: 20px;
+ outline: none;
+ border: none;
+ color: white;
+ border: 1px solid white;
+ border-radius: 5px;
+ background-color: rgba(255, 255, 255, 0);
+}
+
+  .form ::placeholder {
+    color: rgb(255, 255, 255);
+  }
+  
+  .form > input {
+    padding: 5px 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    width: 550px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+   }
+
+
+   .form > textarea {
+    padding: 5px 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    width: 550px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+   }
+
+   .form button{
+    padding: 7px 40px;
+    font-size: 20px;
+    background-color: #FFBD05;
+    color: red;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+   }
+
+   .form button:hover{
+         background-color: #DC0001;
+         color: white;
+   }
