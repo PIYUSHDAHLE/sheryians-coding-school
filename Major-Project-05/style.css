@@ -27,6 +27,7 @@ nav {
   align-items: center;
   padding: 0 20px;
   position: fixed;
+  z-index: 1;
 }
 
 nav .left {
@@ -44,13 +45,13 @@ nav .right {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 nav .right ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   list-style: none;
 }
 
@@ -324,3 +325,106 @@ color:#800080;
 .page2 .line .ri p{
 color:#494949;
 }
+
+/* 3rd page section */
+.page3 {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    background-color: #ce95fd;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .page3 .heading{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .page3 .heading h1{
+    font-size: 30px;
+    color: purple;
+  }
+  .page3 .heading p{
+    font-size: 15px;
+    color: rgb(61, 61, 61);
+  }
+
+  .page3 .collections{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .page3 .collections .card{
+    width: 300px;
+   height: 345px;
+   border-radius: 5px;
+   overflow: hidden;
+    background-color:#800080;
+  }
+  .page3 .collections .card img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: all .3s ease;
+    z-index: 0;
+}
+
+.page3 .collections .card img:hover{
+    transform: scale(1.08);
+  }
+
+  .page3 .collections .card .content{
+    width: 300px;
+     background-color: white;
+  }
+  .card > .content > .line1{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px;
+  }
+  .card > .content > h1{
+    font-size: 15px;
+    text-align: center;
+    padding:0 10px;
+  }
+  .card > .content > .line2{
+    font-size: 10px;
+    text-align: center;
+    padding:0 10px;
+  }
+  .card > .content > .line3{
+    text-align: center;
+    padding:0 10px;
+    display: flex;
+    font-size: 18px;
+    width: 100%;
+    gap: 10px;
+}
+.card > .content > .line3 >.mid{
+    text-align: center;
+    width: 33.3%;
+    margin: 10px 0;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding:5px 0;
+    border: 1px solid black;
+}
+
+.line3 >.mid > p{
+    font-size: 12px;
+  }
