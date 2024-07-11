@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lilita+One&family=Lobster&family=Oswald:wght@200..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +42,10 @@ nav .left {
 
 nav .left img {
   width: 50px;
+}
+nav .left h1 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
 }
 
 nav .right {
@@ -540,3 +547,85 @@ color:#494949;
          color: #800080;
          cursor: pointer;
    }
+
+
+   /* footer section */
+
+   footer{
+    width: 100%;
+    height: 40vh;
+    color: white;
+    background-color:#60058a;
+  }
+
+  footer .line1{
+      padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  footer .line1 .le{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .line1 .le img{
+       width: 120px;
+    }
+
+    footer .line1 .le img:hover{
+        cursor: pointer;
+    }
+    footer .line1 .mid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+    footer .line1 .mid img{
+      width: 60px;
+       
+  }
+    footer .line1 .mid h3{
+      color: white;       
+      font-size: 25px;
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase ;
+  }
+  footer .line1 .ri{
+    display: flex;
+      gap: 10px;
+  }
+  footer .line1 .ri i{
+color: white;
+font-size: 20px;
+  padding: 10px;
+  border-radius: 30%;
+  border: 1px solid white;
+  }
+  footer .line1 .ri i:hover{
+       color: #800080;
+       background-color: #ffffff;
+       cursor: pointer;
+  }
+
+  footer .line2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  footer .line2 ul {
+      list-style: none;
+      display:flex;
+      gap: 30px;
+  }
+  footer .line2 ul li {
+      display:flex;
+      align-items: center;
+      gap: 5px;
+  }
