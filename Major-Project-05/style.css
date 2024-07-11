@@ -10,13 +10,14 @@ font-family: "Poppins", sans-serif;
 html, body{
 height: 100%;
 width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
+}
+
+body{
+background-color: #f0c7f0;
 }
 
 nav{
-    width: 80vw;
+    width: 100%;
     height: 8vh;
     background-color: purple;
     color: white;
@@ -24,6 +25,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: fixed;
 }
 
 nav .left {
@@ -74,3 +76,64 @@ nav .right button:hover{
     font-size: 25px;
 }
 
+.page1{
+    padding-top: 5vh;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.page1 .left{
+    width: 50%;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 10px;
+}
+
+.page1 .left h1{
+ font-size: 40px;
+ color: #b146b1;
+}
+.page1 .left h3{
+    font-size: 22px;
+    color: #fc70fc;
+}
+.page1 .left p{
+ font-size: 15px;
+ color: gray;
+ text-align: center;
+ padding: 0 40px;
+}
+
+.page1 .left button{
+    margin-top: 30px;
+    padding: 8px 50px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #850785;
+    border-radius: 5px;
+    font-size: 18px;
+    transition:all 0.3s ease;
+}
+
+.page1 .left button:hover{
+    transform: scale(1.1);
+    background-color: #a711a7a9;
+    cursor: pointer;
+}
+
+.page1 .right{
+    width: 50%;
+    height: 90vh;
+    background-image: url(https://img.freepik.com/premium-photo/simple-beautiful-modern-house-design-hd-image_974166-986.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
