@@ -41,3 +41,12 @@ btn.addEventListener('click', () => {
 close.addEventListener('click', () => {
     popUp.style.display = 'none';
 });
+
+//Targeting from navbar list name to there heading page
+function scrollToSection(sectionId) {
+    var element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        element.style.margin = "0px";
+    }
+}
