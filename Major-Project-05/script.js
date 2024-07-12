@@ -1,6 +1,6 @@
 // search section
 
-document.querySelectorAll('.dropbtn').forEach(button => {
+document.querySelectorAll('.dropbtn').forEach((button) => {
     button.addEventListener('mouseover', () => {
         button.querySelector('.arrow').innerHTML = '<i class="ri-arrow-up-s-line"></i>'; // Up arrow
     });
@@ -19,11 +19,25 @@ document.querySelectorAll('.dropdown-content a').forEach(item => {
     });
 });
 
-document.querySelectorAll('.dropdown').forEach(dropdown => {
+document.querySelectorAll('.dropdown').forEach((dropdown) => {
     dropdown.addEventListener('mouseenter', () => {
         dropdown.querySelector('.dropdown-content').style.display = 'block'; // Show dropdown on hover
     });
     dropdown.addEventListener('mouseleave', () => {
         dropdown.querySelector('.dropdown-content').style.display = 'none'; // Hide dropdown when not hovering
     });
+});
+
+//pop-up section
+
+const btn = document.querySelector('.get-btn');
+const popUp = document.querySelector('.pop-up');
+const close = document.querySelector('.close');
+
+btn.addEventListener('click', () => {
+    popUp.style.display = 'flex';
+});
+
+close.addEventListener('click', () => {
+    popUp.style.display = 'none';
 });
