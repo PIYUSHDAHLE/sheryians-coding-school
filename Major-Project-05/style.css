@@ -897,7 +897,6 @@ display: none;
   .page2 .line {
     height: 75vh;
     gap: 20px;
-   
     flex-direction: column;
   }
   .page2 .line .le {
