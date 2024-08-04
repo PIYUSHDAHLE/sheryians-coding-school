@@ -60,11 +60,18 @@ nav .right ul {
   align-items: center;
   gap: 30px;
   list-style: none;
+
+}
+nav .right ul li{
+  border-bottom:1px solid transparent;
+  transition: 0.3s all ease;
 }
 
 nav .right ul li:hover {
   cursor: pointer;
   color: rgb(205, 171, 248);
+ transform: scale(1.1);
+  border-bottom:1px solid rgb(205, 171, 248);
 }
 
 nav .right button {
@@ -128,12 +135,10 @@ nav .right button:hover {
   background-color: #850785;
   border-radius: 5px;
   font-size: 18px;
-  transition: all 0.3s ease;
   z-index: 0;
 }
 
 .page1 .left button:hover {
-  transform: scale(1.1);
   background-color: #a711a7a9;
   cursor: pointer;
 }
@@ -419,7 +424,7 @@ nav .right button:hover {
   margin-bottom: 30px;
 }
 
-.page2 .line {
+.page2 .line-left ,.page2 .line-right,.line-left1, .line-left2, .line-right1{
   width: 90%;
   height: 40vh;
   border: 3px solid #850785;
@@ -432,32 +437,45 @@ nav .right button:hover {
   background-color: #e0b0ff;
 }
 
-.page2 .line .le {
+.page2 .line-left .le,.page2 .line-right .le,.line-left1 .le, .line-left2 .le, .line-right1 .le{
   width: 20%;
 }
 
-.page2 .line .le img {
+.page2 .line-left .le img,.page2 .line-right .le img ,.line-left1 .le img, .line-left2 .le img, .line-right1 .le img{
   width: 170px;
   border: 3px solid #850785;
   border-radius: 5%;
   padding: 40px;
   background-color: rgb(236, 173, 255);
 }
-.page2 .line .le img:hover {
+.page2 .line-left .le img:hover {
+  background-color: #ce95fd;
+  cursor: pointer;
+}
+.page2 .line-right .le img:hover {
   background-color: #ce95fd;
   cursor: pointer;
 }
 
-.page2 .line .ri {
+.line-left1 .le img:hover, .line-left2 .le img:hover, .line-right1 .le img:hover{
+  background-color: #ce95fd;
+  cursor: pointer;
+}
+
+.page2 .line-left .ri,.page2 .line-right .ri,.page2 .line-left1 .ri,.page2 .line-right1 .ri,.page2 .line-left2 .ri {
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.page2 .line .ri h3 {
+.page2 .line-left .ri h3 ,.page2 .line-right .ri h3,
+.page2 .line-left1 .ri h3 ,.page2 .line-right1 .ri h3,
+.page2 .line-left2 .ri h3{
   color: #800080;
 }
-.page2 .line .ri p {
+.page2 .line-left .ri p ,.page2 .line-right .ri p,
+.page2 .line-left1 .ri p ,.page2 .line-right1 .ri p,
+.page2 .line-left2 .ri p{
   color: #494949;
 }
 
