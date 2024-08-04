@@ -17,6 +17,7 @@ body {
 
 body {
   background-color: #f0c7f0;
+  overflow-x: hidden;
 }
 
 nav {
